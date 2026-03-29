@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadam Haritha Sri - Portfolio</title>
+    <meta name="description" content="Portfolio of Kadam Haritha Sri, Software Developer & AI Enthusiast">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor Glow -->
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <!-- Starry Background Canvas -->
+    <canvas id="starsCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#hero">HARITHA <span class="accent-glow">SRI</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">Mission Brief</a></li>
+            <li><a href="#skills">Constellations</a></li>
+            <li><a href="#projects">Missions</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#contact">Ground Control</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero fade-in-section">
+        <div class="hero-content">
+            <h2 class="pre-title">Greeting, Earthlings</h2>
+            <h1 class="main-title">I'm <span class="glow-text">Kadam Haritha Sri</span></h1>
+            <p class="tagline"><span id="typewriter"></span><span class="cursor">|</span></p>
+            <p class="subtitle">Exploring the cosmos of machine learning and full-stack development.</p>
+            <a href="#about" class="btn-primary">Explore My Universe <i class="fas fa-rocket"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Mission <span class="accent-glow">Brief</span></h2>
+            <div class="about-content">
+                <div class="astronaut-img">
+                    <div class="astronaut-placeholder">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Astronaut Profile</h3>
+                    <p>I am a passionate software developer and AI enthusiast, currently pursuing my B.Tech at B V Raju Institute of Technology. My mission is to build intelligent systems and dynamic web applications that solve real-world problems.</p>
+                    <p>From developing skin cancer detection models using deep learning to building functional full-stack task management apps, I thrive on exploring new technologies across the galactic frontier of computer science.</p>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Base: Hyderabad, TS</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>CGPA: 8.23</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <span>Languages: EN, TE, HI, MR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Technical <span class="accent-glow">Constellations</span></h2>
+            <div class="skills-grid">
+                
+                <div class="skill-card planet-card">
+                    <div class="planet-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Languages</h3>
+                    <ul class="skill-list">
+                        <li>C</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card planet-card">
+                    <div class="planet-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Tech</h3>
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card planet-card">
+                    <div class="planet-icon"><i class="fas fa-database"></i></div>
+                    <h3>Databases</h3>
+                    <ul class="skill-list">
+                        <li>SQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card planet-card">
+                    <div class="planet-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools & OS</h3>
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>Docker (Basics)</li>
+                        <li>Linux Basics</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Notable <span class="accent-glow">Missions</span></h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card mission-card">
+                    <div class="mission-status">Completed</div>
+                    <div class="project-content">
+                        <h3>Skin Cancer Detection Model</h3>
+                        <p class="project-subtitle">Melanoma Classification</p>
+                        <p class="project-desc">Developed a machine learning model to classify melanoma vs non-melanoma skin lesions using CNN architectures. Applied data preprocessing and augmentation for imbalanced datasets.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-outline"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card mission-card">
+                    <div class="mission-status">Completed</div>
+                    <div class="project-content">
+                        <h3>TAP Tracker</h3>
+                        <p class="project-subtitle">Task & Progress Web Application</p>
+                        <p class="project-desc">Built a task management web app to organize daily and long-term activities. Designed UI with interactive features and basic backend logic with database connectivity.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-outline"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey / Timeline Section -->
+    <section id="journey" class="journey section-padding fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Academic <span class="accent-glow">Journey</span></h2>
+            
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2027</span>
+                        <h3>B.Tech - Computer Science</h3>
+                        <h4>B V Raju Institute of Technology</h4>
+                        <p>CGPA: 8.23</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h3>Intermediate (12th)</h3>
+                        <h4>Kshatriya Junior College</h4>
+                        <p>Percentage: 91.9%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021</span>
+                        <h3>Matriculation (10th)</h3>
+                        <h4>Sri Chaitanya Techno School</h4>
+                        <p>Percentage: 95%</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Trainings & Certifications (Achievements) -->
+            <h2 class="section-title achievements-title">Stellar <span class="accent-glow">Badges</span></h2>
+            <div class="badges-grid">
+                
+                <div class="badge-card">
+                    <i class="fas fa-certificate badge-icon glow-green"></i>
+                    <div class="badge-info">
+                        <h4>Salesforce Agentforce Specialist</h4>
+                        <p>Certification - 2025</p>
+                    </div>
+                </div>
+
+                <div class="badge-card">
+                    <i class="fas fa-brain badge-icon glow-blue"></i>
+                    <div class="badge-info">
+                        <h4>NPTEL Machine Learning</h4>
+                        <p>IIT Kharagpur - 2025</p>
+                    </div>
+                </div>
+
+                <div class="badge-card">
+                    <i class="fas fa-code badge-icon glow-purple"></i>
+                    <div class="badge-info">
+                        <h4>Front-End Web Dev (TASK)</h4>
+                        <p>Training & Cert - March 2025</p>
+                    </div>
+                </div>
+
+                <div class="badge-card">
+                    <i class="fas fa-mobile-alt badge-icon glow-orange"></i>
+                    <div class="badge-info">
+                        <h4>Android App Dev Workshop</h4>
+                        <p>IITH, Hyderabad - April 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Ground <span class="accent-glow">Control</span></h2>
+            <p class="contact-subtitle">Ready to initiate the next mission? Send a transmission.</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Transmission</h3>
+                        <p><a href="mailto:23211a6744@bvrit.ac.in" class="contact-link">23211a6744@bvrit.ac.in</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Comm Link</h3>
+                        <p><a href="tel:7396320204" class="contact-link">7396320204</a></p>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/haritha022004" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kadam-haritha-sri" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder="Captain's Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder="Reply Frequency (Email)">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required placeholder="Enter transmission data..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Transmit Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Kadam Haritha Sri. Logged in the cosmic archives.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#hero" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
